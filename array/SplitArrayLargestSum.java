@@ -91,7 +91,7 @@ public class SplitArrayLargestSum {
 
         System.out.println(obj.splitArray(nums1, k1)); // Output: 18
 
-        int[] nums2 = {1, 2, 3, 4, 5};
+        int[] nums2 = {40,30,10,20};
         int k2 = 2;
 
         System.out.println(obj.splitArray(nums2, k2)); // Output: 9
