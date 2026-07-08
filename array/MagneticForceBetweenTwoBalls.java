@@ -1,16 +1,18 @@
 package array;
 
 public class MagneticForceBetweenTwoBalls {
-    public int maxDistance(int[] position, int m) {
-        int n=position.length;
-        int start=0;
-        int end=n;
-        int mid=start+(end-start)/2;
-        if(mid-start==end-mid){
-            return end-mid;
+    
+    public static void main(String[] args) {
+        int[] array={1,2,3,4,5};
+        for(int num:array){
+            if(num%2==0){
+                System.out.print("even");
+            }
+            else{
+                System.out.print("odd");
+            }
         }
-   
-        
+
     }
     
 }
