@@ -4,29 +4,38 @@ public class InsertionSort {
 
     public static void main(String[] args) {
 
-        // Input array
+        // Input array to be sorted
         int[] array = {4, 1, 5, 2, 3};
 
-        // Traverse from the second element
+        // Start from the second element because
+        // the first element is already considered sorted.
         for (int i = 1; i < array.length; i++) {
 
-            // Element to be inserted
-            int current_variable = array[i];
+            // Store the current element that needs
+            // to be placed in the correct position.
+            int current = array[i];
 
-            // Start comparing with previous elements
-            int pre = i - 1;
+            // Start comparing with the previous element.
+            int prev = i - 1;
 
-            // Shift elements greater than current_variable to the right
-            while (pre >= 0 && array[pre] > current_variable) {
-                array[pre + 1] = array[pre];
-                pre--;
+            // Move left while:
+            // 1. We are inside the array.
+            // 2. Previous element is greater than the current element.
+            while (prev >= 0 && array[prev] > current) {
+
+                // Shift the previous element one position to the right.
+                array[prev + 1] = array[prev];
+
+                // Move one position left to continue checking.
+                prev--;
             }
 
-            // Insert current_variable at the correct position
-            array[pre + 1] = current_variable;
+            // Insert the current element into its correct position.
+            // (prev + 1) is the first position where current should be placed.
+            array[prev + 1] = current;
         }
 
-        // Print the sorted array
+        // Print the sorted array.
         System.out.print("Sorted Array: ");
         for (int num : array) {
             System.out.print(num + " ");
