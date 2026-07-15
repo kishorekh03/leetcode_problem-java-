@@ -12,7 +12,7 @@ public class RemoveAllOccurrencesofaSubstring {
         // Repeat until 'part' is no longer found.
         while (s1.indexOf(part) != -1) {
 
-            // Find the starting index of the first occurrence.
+            // Find the starting index of the fisrst occurrence.
             int start = s1.indexOf(part);
 
             // Remove the substring from start to start + part.length().
