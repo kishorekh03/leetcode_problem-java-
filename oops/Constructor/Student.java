@@ -23,9 +23,10 @@ public class Student {
         this.name = name;
         this.usn = usn;
         this.department = department;
+        
         System.out.println("");
 
-        System.out.print("Parameterized Constructor Called");
+        System.out.println("Parameterized Constructor Called");
     }
 
     // ---------------- Display Method ----------------
